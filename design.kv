@@ -1,0 +1,102 @@
+MDFloatLayout:
+
+    MDGridLayout:
+        #padding:dp(40)
+        size_hint:0.7,0.55
+        pos_hint:{'center_x':0.5,'center_y':0.65}
+        cols:3
+        spacing:dp(2)
+
+
+        MDRaisedButton:
+            id:top_left
+            text:""
+            on_release:app.press_main_button(self,'top_left')
+            size_hint:1,1
+            md_bg_color_disabled:(1,1,1,1)
+
+
+        MDRaisedButton:
+            id:top_centre
+            text:""
+            on_release:app.press_main_button(self,"top_centre")
+            size_hint:1,1
+            md_bg_color_disabled:(1,1,1,1)
+
+
+        MDRaisedButton:
+            id:top_right
+            text:""
+            on_release:app.press_main_button(self,"top_right")
+            size_hint:1,1
+            md_bg_color_disabled:(1,1,1,1)
+
+
+        MDRaisedButton:
+            id:middle_left
+            text:""
+            on_release:app.press_main_button(self,"middle_left")
+            size_hint:1,1
+            md_bg_color_disabled:(1,1,1,1)
+
+
+        MDRaisedButton:
+            id:middle_centre
+            text:""
+            on_release:app.press_main_button(self,"middle_centre")
+            size_hint:1,1
+            md_bg_color_disabled:(1,1,1,1)
+
+
+        MDRaisedButton:
+            id:middle_right
+            text:""
+            on_release:app.press_main_button(self,"middle_right")
+            size_hint:1,1
+            md_bg_color_disabled:(1,1,1,1)
+
+
+        MDRaisedButton:
+            id:bottom_left
+            text:""
+            on_release:app.press_main_button(self,"bottom_left")
+            size_hint:1,1
+            md_bg_color_disabled:(1,1,1,1)
+
+
+        MDRaisedButton:
+            id:bottom_centre
+            text:""
+            on_release:app.press_main_button(self,"bottom_centre")
+            size_hint:1,1
+            md_bg_color_disabled:(1,1,1,1)
+
+        MDRaisedButton:
+            id:bottom_right
+            text:""
+            on_release:app.press_main_button(self,"bottom_right")
+            size_hint:1,1
+            md_bg_color_disabled:(1,1,1,1)
+
+    MDLabel:
+        size_hint:1,0.7
+        id:my_label
+        text:"'X' GOES FIRST!"
+        halign:'center'
+        pos_hint:{'center_y':0.3}
+        font_size:72
+
+    MDRaisedButton:
+        text:"Restart Game"
+        size_hint:0.4,0.075
+        pos_hint:{'center_x':0.5,'center_y':0.2}
+        on_release:app.reset_everything()
+        font_size: 36
+
+    MDLabel:
+        size_hint:1,0.7
+        id:score
+        text:"'X' WINS: 0  ||  'O' WINS: 0"
+        halign:'center'
+        font_size:36
+        pos_hint:{'center_y':0.1}
